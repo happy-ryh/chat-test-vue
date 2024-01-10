@@ -1,4 +1,4 @@
-# health-vue
+# chat-vue
 
 ## Project setup
 ```
