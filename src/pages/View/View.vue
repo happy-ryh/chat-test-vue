@@ -1,6 +1,12 @@
 <template>
   <div>
-    <UserWindow></UserWindow>
+    <el-row>
+      <UserWindow></UserWindow>
+      <UserWindow></UserWindow>
+      <UserWindow></UserWindow>
+      <UserWindow></UserWindow>
+      <UserWindow></UserWindow>
+    </el-row>
   </div>
 </template>
 
