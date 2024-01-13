@@ -1,22 +1,6 @@
 <template>
-  <div class="loginBok">
-    <el-row type="flex" class="row-bg" justify="space-around">
-      <el-col :span="12" ><div class="text-info" >欢迎登录健康指导系统</div></el-col>
-    </el-row>
-    <el-row type="flex" class="row-bg" style="margin-top: 20px">
-      <el-form :label-position="right" label-width="80px" :model="formLabelAlign" >
-        <el-form-item label="账号：">
-          <el-input v-model="formLabelAlign.name" placeholder="请输入用户名或电话号码"></el-input>
-        </el-form-item>
-        <el-form-item label="密码：">
-          <el-input v-model="formLabelAlign.region" type="password"></el-input>
-        </el-form-item>
-      </el-form>
-    </el-row>
-    <el-row type="flex" class="row-bg">
-      <el-button icon="el-icon-key" type="primary" @click="loginon">登录</el-button>
-      <el-button type="warning" icon="el-icon-unlock" @click="toRegister">注册</el-button>
-    </el-row>
+  <div class="">
+    用户中心页面
   </div>
 
 </template>

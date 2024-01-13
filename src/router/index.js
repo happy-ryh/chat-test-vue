@@ -3,33 +3,27 @@
 //引入VueRouter
 import VueRouter from 'vue-router';
 //引入组件
-import Login from "@/pages/Login/Login";
-import History from "@/pages/History/History";
-import Register from "@/pages/Register/Register";
-import Home from "@/pages/Home/Home";
+import user from "../pages/User/User";
+import news from "../pages/News/News";
+import view from "../pages/View/View";
 //创建路由器
  const router = new VueRouter({
     routes:[
         {
-            name:Login,
-            path:'/Login',
-            component:Login
+            name:view,
+            path:'/view',
+            component:view
         },
         {
-            name:History,
-            path:'/History',
-            component:History
+            name:news,
+            path:'/news',
+            component:news
         },
         {
-            name:Register,
-            path:'/Register',
-            component:Register
-        },
-        {
-            name:Home,
-            path:'/Home',
-            component:Home
-        },
+            name:user,
+            path:'/User',
+            component:user
+        }
     ]
 })
 router.beforeEach((to,from,next)=>{

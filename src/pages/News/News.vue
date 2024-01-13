@@ -1,6 +1,6 @@
 <template>
   <div>
-      这是历史页面
+      这是消息管理
   </div>
 </template>
 

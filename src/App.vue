@@ -1,12 +1,18 @@
 <template>
   <div>
-    <header-top>
-    </header-top>
+    <div>
+      <HeaderTop></HeaderTop>
+    </div>
+    <div >
+      <router-view>
+      </router-view>
+    </div>
   </div>
 </template>
 
 <script>
 import HeaderTop from "@/components/Header";
+import axios from "axios";
 
 export default {
   name: 'App',
@@ -14,7 +20,16 @@ export default {
     HeaderTop
   },
   methods:{
-
+    getData(){
+      axios.get('http://localhost:8080/project/user/info').then(
+          response =>{
+            console.log(response.data);
+          },
+          error =>{
+            console.log(error.message);
+          }
+      )
+    }
   }
 }
 </script>

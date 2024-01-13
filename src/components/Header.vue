@@ -1,7 +1,15 @@
 <template>
 <!--  结构-->
   <div id="HeaderBok">
-
+    <el-menu  class="el-menu-demo" mode="horizontal" :router="router_v" text-color="#01212A" active-text-color="#e6a23c" style="background-color: rgba(0,0,0,0);">
+      <el-menu-item style="background: 0 0!important;"><el-image
+          style="width: 46px; height: 46px"
+          :src="'favicon.ico'"></el-image></el-menu-item>
+      <el-menu-item style="color: #01212A;background: 0 0!important;">消息演示项目</el-menu-item>
+      <el-menu-item index="view">展示页面</el-menu-item>
+      <el-menu-item index="user">用户中心</el-menu-item>
+      <el-menu-item index="news">消息管理</el-menu-item>
+    </el-menu>
   </div>
 </template>
 
@@ -11,10 +19,8 @@ export default {
 name: "header",
   data() {
     return {
-      // activeIndex: '1',
-      // activeIndex2: '1'
-      isLogin:false,
-      username:''
+      username:'',
+      router_v:true
     };
   },
   methods: {
@@ -30,9 +36,7 @@ name: "header",
     }
   },
   mounted() {
-  this.$bus.$on('ChangeLoginType',(data)=>{
-    this.isLogin=data;
-  })
+
   }
 }
 </script>
